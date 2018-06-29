@@ -31,15 +31,15 @@ Call query Command by Async ( 异步  方法调用 query)
 - command (String) - T-SQL command to be executed.（执行的 sql 语句）
 - params (Array/Object) - T-SQL params values （sql 语句中的参数值对象）
 
-**Params Only Support Below Formatter(params 只支持下面的数据格式)**
+**Params Only Support Below Formatter(params 只支持下面的数据格式)**
 
 ```js
 params1 = { id: 1, name: "jack" };
 params2 = [1, 2, 3, 4];
-params3={id：1，schoolId:[1,2,3,4]};
+params3={id：1，schoolId:[1,2,3,4]};
 ```
 
-** Example**
+** Example**
 
 ```js
 it("asyncQuery Test", async () => {
@@ -55,22 +55,22 @@ it("asyncQuery Test", async () => {
 
 ---
 
-### **asyncInsert([command?:String],[params?:Array])**
+### **asyncInsert([command?:String],[params?:Array])**
 
-Call Insert Command by Async ( 异步方法调用 Insert)
+Call Insert Command by Async ( 异步方法调用 Insert)
 
 **Arguments**
 
 - command - T-SQL command to be executed.（执行的 sql 语句）
 - params - T-SQL params values （sql 语句中的参数值对象）
 
-**Params Only Support Below Formatter (params 只支持下面的数据格式)**
+** Params  Only Support Below Formatter (params 只支持下面的数据格式)**
 
 ```js
 params1 = [{ id: 1, name: "jack" }, { id: 2, name: "mike" }];
 ```
 
-** Example**
+**Example**
 
 ```js
   it("asyncInsert Test", async () => {
@@ -87,16 +87,16 @@ params1 = [{ id: 1, name: "jack" }, { id: 2, name: "mike" }];
 
 ### **Transaction**
 
-#### **asyncBegin([isolationLevel?:obj], [callback?:async Func])**
+#### **asyncBegin([isolationLevel?:obj], [callback?:async Func])**
 
-Async begin Transaction ( 异步  方法调用 query)
+Async begin Transaction (异步 方法调用 query)
 
 **Arguments**
 
 - isolationLevel - Controls the locking and row versioning behavior of TSQL statements issued by a connection. Optional. `READ_COMMITTED` by default. For possible values see `sql.ISOLATION_LEVEL`.[查看 node-mssql](https://github.com/tiandaox/egg-mssql)
-- callback(err) - An Async callback which is called after transaction has began;(异步  回调方法)
+- callback(err) - An Async callback which is called after transaction has began;(异步回调方法)
 
-** Example**
+**Example**
 
 ```js
 it("asyn transaction test", async () => {
