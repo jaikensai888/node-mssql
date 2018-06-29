@@ -14,7 +14,7 @@ Supported TDS drivers:
 
 **IMPORTANT**: Requires Node.js 4 or newer.
 
-    npm install mssql
+    npm install jt-mssql
 
 ## Quick Example
 
