@@ -8,7 +8,7 @@ see [tedious node-mssql](https://github.com/tiandaox/egg-mssql) for more detail.
 
 ## version
 
-1.0.3
+1.0.4
 
 ## usage
 
@@ -64,7 +64,7 @@ Call Insert Command by Async ( 异步方法调用 Insert)
 - command - T-SQL command to be executed.（执行的 sql 语句）
 - params - T-SQL params values （sql 语句中的参数值对象）
 
-** Params  Only Support Below Formatter (params 只支持下面的数据格式)**
+** Params Only Support Below Formatter (params 只支持下面的数据格式)**
 
 ```js
 params1 = [{ id: 1, name: "jack" }, { id: 2, name: "mike" }];
