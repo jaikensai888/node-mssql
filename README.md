@@ -13,7 +13,7 @@ see [tedious node-mssql](https://github.com/tiandaox/egg-mssql) for more detail.
 ## usage
 
 ```npm
-npm install jtapp -save
+npm install jt-mssql -save
 ```
 
 ## Example
