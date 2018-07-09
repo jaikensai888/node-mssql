@@ -8,7 +8,7 @@ see [tedious node-mssql](https://github.com/tiandaox/egg-mssql) for more detail.
 
 ## version
 
-1.0.4
+1.0.5
 
 ## usage
 
